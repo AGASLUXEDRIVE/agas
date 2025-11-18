@@ -1664,8 +1664,8 @@
                             <div class="advantage-icon">
                                 <i class="fas fa-shield-alt"></i>
                             </div>
-                            <h3>Military-Grade Security</h3>
-                            <p>Bank-level security with 2FA, encryption, and session protection</p>
+                            <h3>Advanced Protection</h3>
+                            <p>Modern multi-layer protection with 2FA, encryption, and secure session handling</p>
                         </div>
                         
                         <div class="advantage-card">
@@ -3027,6 +3027,46 @@
       </div>
     </section>
     
+
+<!-- Booking Modal / Section -->
+<section id="booking-section" style="display:none; padding:40px 0;">
+  <div class="container">
+    <div class="section-title"><h2>Book a Luxury Ride</h2><p>Quick booking in three steps</p></div>
+    <div style="max-width:700px;margin:0 auto;background:#fff;padding:20px;border-radius:12px;box-shadow:var(--shadow);">
+      <form id="booking-form">
+        <div class="form-group"><label>Pickup Address</label><input id="booking-pickup" class="form-control" required></div>
+        <div class="form-group"><label>Dropoff Address</label><input id="booking-dropoff" class="form-control" required></div>
+        <div class="form-group"><label>Vehicle Type</label>
+          <select id="booking-vehicle" class="form-control">
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="luxury">Luxury</option>
+            <option value="van">Van</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Pickup Date</label><input id="booking-date" type="date" class="form-control" required></div>
+          <div class="form-group"><label>Pickup Time</label><input id="booking-time" type="time" class="form-control" required></div>
+        </div>
+        <div class="form-group"><label>Price Estimate</label><input id="booking-price" class="form-control" readonly></div>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:10px;">
+          <button class="btn" id="btn-estimate" type="button">Estimate Fare</button>
+          <button class="btn btn-accent" id="btn-book" type="submit">Confirm Booking</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="admin-bookings-section" style="display:none; padding:40px 0; background:#fff;">
+  <div class="container">
+    <div class="section-title"><h2>Manage Bookings</h2><p>View, assign drivers, and update statuses</p></div>
+    <div style="max-width:1000px;margin:0 auto;">
+      <div style="margin-bottom:12px;"><button class="btn" id="btn-refresh-bookings">Refresh</button> <button class="btn btn-outline" id="btn-sync-local">Sync Local Bookings</button></div>
+      <div id="bookings-list" style="background:#f8fafc;padding:12px;border-radius:8px;"></div>
+    </div>
+  </div>
+</section>
 </main>
 
     <!-- Footer -->
